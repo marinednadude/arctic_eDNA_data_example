@@ -56,6 +56,23 @@ asv_counts <- asv_counts %>%
   mutate(Sample = stringr::str_remove(string = Sample, pattern = "MP_"))
 
 
+# align taxonomy with WoRMS -----------------------------------------------
+
+tax_out <- align_taxonomy_to_worms(
+  tax_df = head(tax_table),
+  ordered_rank_columns = c(
+    "Species",
+    "Genus",
+    "Family",
+    "Order",
+    "Class",
+    "Phylum",
+    "Kingdom"
+  ),
+  ASV_column_name = "ASV",
+  parallel = TRUE
+)
+
 # join tables ------------------------------------------------
 
 df <- full_join(x = sample_metadata,

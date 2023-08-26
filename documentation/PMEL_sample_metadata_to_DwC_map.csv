@@ -1,0 +1,17 @@
+PEML_names,DwC_term,Notes
+Sample,samp_name,"This is from the DNA-derived extension, but fieldNumber from the Occurrence Core would also work."
+lat,decimalLatitude,"Will also need to add geodeticDatum, and if you have it, coordinateUncertaintyInMeters"
+long,decimalLongitude,"Will also need to add geodeticDatum, and if you have it, coordinateUncertaintyInMeters"
+sites,locationID,
+group1,NA,"These could be extended Measurement Or Fact values, but they might also work as part of locality or higherGeography"
+group2,NA,
+group3,NA,
+group4,NA,
+group5,NA,
+degLAT,NA,Seems redundant
+chlor_fluorescence_ugramsL,measurementType,"extended Measurement Or Fact values, see: https://rs.gbif.org/extension/obis/extended_measurement_or_fact.xml"
+temperature_degC,measurementType,"extended Measurement Or Fact values, see: https://rs.gbif.org/extension/obis/extended_measurement_or_fact.xml"
+par,measurementType,"extended Measurement Or Fact values, see: https://rs.gbif.org/extension/obis/extended_measurement_or_fact.xml"
+salinity_PSU,measurementType,"extended Measurement Or Fact values, see: https://rs.gbif.org/extension/obis/extended_measurement_or_fact.xml"
+oxygen_umolkg,measurementType,"extended Measurement Or Fact values, see: https://rs.gbif.org/extension/obis/extended_measurement_or_fact.xml"
+depth_m,minimumDepthInMeters / maximumDepthInMeters,
